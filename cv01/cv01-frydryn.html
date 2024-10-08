@@ -10,6 +10,16 @@
             border: solid 1px black;
             margin-bottom: 50px;
         }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .half {
+            width: 48%;
+        }
     </style>
 </head>
 <body>
@@ -115,6 +125,74 @@
                 $('#s5 input').val('');
                 $('#s5 p:nth-child(3)').text('Text prvniho odstavce');
                 $('#s5 p:nth-child(4)').html('Text druheho odstavce');
+            });
+        </script>
+    </section>
+
+    <section id="s6">
+        <h2>6.</h2>
+        <p class="task-description">Vytvořte skupinu checkbox podle  následujícího vzoru. Při zaškrtnutí  vyber/zruš všechny programy se zaškrtnou všechna tlačítka. Při zaškrtnutí skupiny, například Péče o zdraví  se zaškrtne jen program dané skupiny.</p>
+
+        <input type="checkbox" id="control-king">
+        <label for="control-king">vyber/zrus vsechny programy</label>
+        <hr>
+
+        <div class="container">
+            <div class="half">
+                <h4>Cislo a nazev kategorie</h4>
+                <input type="checkbox" class="control-lord sub" name="control1" id="control-1" data-target="group1">
+                <label for="control-1">1 Pece o zdravi</label>
+                <hr>
+                <ul>
+                    <li>
+                        <input type="checkbox" class="peasant sub" name="group1" id="g11">
+                        <label for="g11">34 Pomahat je radost</label>
+                        <hr>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="peasant sub" name="group1" id="g12">
+                        <label for="g12">36 1 Pece o zdravi</label>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+            <div class="half">
+                <h4>Program</h4>
+                <input type="checkbox" class="control-lord sub" name="control2" id="control-2" data-target="group2">
+                <label for="control-2">2 Socialni pece</label>
+                <hr>
+                <ul>
+                    <li>
+                        <input type="checkbox" class="peasant sub" name="group2" id="g21">
+                        <label for="g21">30 Hrabani listi</label>
+                        <hr>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="peasant sub" name="group2" id="g22">
+                        <label for="g22">37 2 Socialni pece</label>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            $('input[type=checkbox]#control-king').click(function() {
+                let checked = this.checked;
+
+                $('input[type=checkbox].sub').each(function() {
+                    this.checked = checked;
+                })
+
+            });
+
+            $('input[type=checkbox].control-lord').click(function() {
+                let target = $(this).attr('data-target');
+                let checked = this.checked;
+
+                $('input[name='+target+']').each(function() {
+                    this.checked = checked;
+                });
             });
         </script>
     </section>
