@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV 01 Frydryn</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        section {
+            border: solid 1px black;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WT - cv01 - Frydryn</h1>
+    <section id="s1">
+        <h2>1.</h2>
+        <p class="task-description">Pomocí Javascriptu: Po kliknutí na odstavec s textem se změní barva textu na modrou.</p>
+        <p onclick="changeTextColor(this, 'blue')">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque perspiciatis quam ut. Quidem, tempora quos.</p>
+        <script>
+            function changeTextColor(el, color) {
+                el.style.color = color;
+            }
+        </script>
+    </section>
+
+    <section id="s2">
+        <h2>2.</h2>
+        <p class="task-description">Vytvořte 4 odstavce s textem. 3. a 4. odstavec bude mít nastavenou třídu zelena, která nastavuje zelené písmo. Pomocí jQuery nastavte:</p>
+
+        <p>Click -> hide this</p>
+        <p>Click -> hide all</p>
+        <p class="green">Click -> hide all green</p>
+        <p class="green">Click -> alert(content)</p>
+        <button id="reset-hidden">show all</button>
+        <script>
+            $("#s2").find("p:nth-child(3)").click(function(event) {
+                $(this).hide();
+            });
+            $("#s2").find("p:nth-child(4)").click(function(event) {
+                $(this).parent().find("p:not(.task-description)").hide();
+            });
+            $("#s2").find("p:nth-child(5)").click(function (event) {
+                $("p.green").hide();
+            });
+            $("#s2").find("p:nth-child(6)").click(function(event) {
+                let content = $(this).text();
+                alert(content);
+            })
+            $('button#reset-hidden').click(function(event) {
+                $("#s2").find("p").show();
+            })
+        </script>
+    </section>
+
+    <section id="s3">
+        <h2>3.</h2>
+        <p class="task-description">Vytvořte formulář se dvěma vstupními okny (input).  Pokud budete editovat okno bude pozadí světle modré (použijte událost focus), druhé neaktivní okno bude mít pozadí světle zelené (použijte událost blur).</p>
+
+        <form action="#">
+            <input type="text" onfocus="changeBG(this, 'lightblue')"><br>
+            <input type="text" onblur="changeBG(this, 'lightgreen')"><br>
+            <button id="reset-colors">reset colors</button>
+        </form>
+
+        <script>
+            function changeBG(el, color) {
+                $(el).css({'background':color});
+            }
+
+            $('button#reset-colors').click(function(event) {
+                $('#s3 form input:text').css({'background':'white'});
+            });
+
+        </script>
+    </section>
+
+    <section id="s4">
+        <h2>4.</h2>
+        <p class="task-description">Vytvořte tlačítko a jeden odstavec s textem. Pokud klepnete na  tlačítko, odstavec se skryje, po opětovném klepnutí se odstavec objeví. (nápověda toggle nebo fade??)</p>
+        <button id="toggle-btn">toggle</button>
+        <p id="toggle-target">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error ullam vel eos quibusdam tempora eveniet sit incidunt provident omnis.</p>
+        <script>
+            $('#toggle-btn').click(function(event) {
+                $('#toggle-target').toggle();
+            });
+        </script>
+    </section>
+
+    <section id="s5">
+        <h2>5.</h2>
+        <p class="task-description">Vytvořte podle následujícího vzoru.</p>
+        <p>Text prvniho odstavce</p>
+        <p>Text druheho odstavce</p>
+        <label for="f1">Input field:</label>
+        <input type="text" name="f1" id="f1"><br>
+        <button id="set-text">Nastav text</button>
+        <button id="set-html">Nastav HTML</button>
+        <button id="set-val">Nastav hodnotu</button>
+        <button id="reset-s5">reset s5</button>
+
+        <script>
+            $('#set-text').click(function(event) {
+                $('#s5 p:nth-child(3)').text('frydryn'); });
+            $('#set-html').click(function(event) {
+                let content = $('#s5 p:nth-child(4)').text();
+                $('#s5 p:nth-child(4)').html('<b>'+content+'</b>');
+            });
+            $('#set-val').click(function(event) {
+                $('#s5 input').val('Ulice 123, Mesto, 99 999');
+            });
+
+            $('#reset-s5').click(function(event) {
+                $('#s5 input').val('');
+                $('#s5 p:nth-child(3)').text('Text prvniho odstavce');
+                $('#s5 p:nth-child(4)').html('Text druheho odstavce');
+            });
+        </script>
+    </section>
+    
+</body>
+</html
