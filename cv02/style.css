@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    min-height: 300px;
+}
+
+.card span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 10%;
+    line-height: 2em;
+}
+
+.card button {
+    height: 10%;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.card .image {
+    width: 95%;
+    height: 80%;
+    padding: 2.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#s01 .card:nth-child(1) .image { background-image: url('img/smrk.jpg');}
+#s01 .card:nth-child(2) .image { background-image: url('img/buk.jpg');}
+#s01 .card:nth-child(3) .image { background-image: url('img/dub.jpg');}
+#s01 .card:nth-child(4) .image { background-image: url('img/jablon.jpg');}
+
+.tac {
+    text-align: center;
+}
+
+.source, .target {
+    border: solid 1px #aaa;
+}
+
+#s02 .source .card:nth-child(1) .image { background-image: url('img/hroch.jpg');}
+#s02 .source .card:nth-child(2) .image { background-image: url('img/zirafa.jpg');}
+#s02 .source .card:nth-child(3) .image { background-image: url('img/gorila.jpg');}
+#s02 .source .card:nth-child(4) .image { background-image: url('img/zebra.jpg');}
+
+#s02 .card .image{
+    width: 80%;
+    height: 80%;
+    padding: 0;
+    margin: 10%;
+}
+
+.highlight-correct {
+    background-color: lightgreen;
+}
+
+#s04 .task p:nth-child(2) {
+    color: greenyellow;
+}
+
+#accordion h3 {
+    font-weight: bold;
+}
+
+#accordion span.ui-icon {
+    left: 98%;
+    height: 20px;
+    margin-top: 0px; 
+    margin-top: 3px;
+}

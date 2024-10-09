@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv-02 Frydryn</title>
+
+    <!-- external jquery libs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"></script>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <h1>jQuery + jQuery UI</h1>
+
+    <section id="s01">
+        <h2>1.</h2>
+        <p class="task-description">
+            Vytvořte vedle sebe obrázky například listů. Po kliknutí na jednotlivá tlačítka se objeví vedle/nad obrázkem řešení. Použijte například toggle z jquery ui.
+        </p>
+        <h3>Hadej co je to za strom</h3>
+
+        <div class="task">
+            <div class="container">
+                <div class="card"><span class="answer transparent">Smrk</span><div class="image"></div><button class="toggler">Reseni</button></div>
+                <div class="card"><span class="answer transparent">Buk</span><div class="image"></div><button class="toggler">Reseni</button></div>
+                <div class="card"><span class="answer transparent">Dub</span><div class="image"></div><button class="toggler">Reseni</button></div>
+                <div class="card"><span class="answer transparent">Jablon</span><div class="image"></div><button class="toggler">Reseni</button></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section id="s02">
+        <h2>2.</h2>
+        <p class="task-description">
+            Vytvořte jednoduchý výukový program. Například budeme mít fotky 4 listnáčů a 4 jehličnanů. Tyto stromy se budou moci přetáhnout buď do rámečku jehličnany nebo listnáče - další soubor. (Použijte jQuery UI)
+        </p>
+        <div class="task">
+            <div class="source container">
+                <div class="card toDrag"><div class="image"></div></div>
+                <div class="card toDrag"><div class="image"></div></div>
+                <div class="card toDrag"><div class="image"></div></div>
+                <div class="card toDrag"><div class="image"></div></div>
+            </div>
+            <div class="target container">
+                <div class="card toDrop" data-source="2"><span>Zirafa</span></div>
+                <div class="card toDrop" data-source="1"><span>Hroch</span></div>
+                <div class="card toDrop" data-source="4"><span>Zebra</span></div>
+                <div class="card toDrop" data-source="3"><span>Gorila</span></div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    
+    <section id="s03">
+        <h2>3.</h2>
+        <p class="task-description">
+            Vytvořte Accordion  (harmoniku) – rozklikávací nadpisy s texty podle vzoru. Texty vytvořte vlastní, aby v nich byla vidět Vaše identita.
+        </p>
+        <div class="task">
+
+            <div id="accordion">
+                <h3>Kdy a kym byla objevena Amerika</h3>
+                <p>1492 Kryštof Kolumbus při hledání západní cesty do Indie přistává u karibských ostrovů a objevuje nový kontinent (12. října). Objevení Ameriky začali Američané oslavovat v roce 1792 jako Kolumbův den, v roce 1971 se stal federálním svátkem a k tradičním oslavám patřily mohutné průvody.</p>
+                <h3>Co je to XSS</h3>
+                <p>Cross-site scripting (XSS) je závažná bezpečnostní zranitelnost webových stránek, kdy útočník vloží do stránky vlastní škodlivý JavaScript, který se následně na stránce spustí.</p>
+                <h3>Pri kolika stupnich se vari Lithium</h3>
+                <p>Teplota tání, 180,54 °C (453,69 K) ; Teplota varu, 1342 °C (1 615,15 K) ; Skupenské teplo tání, 3,00 kJ/mol ; Skupenské teplo varu, 147,1 kJ/mol.</p>
+                <h3>Ktery dinosaurus byl nejdelsi</h3>
+                <p>Nejdelší známý dinosaurus - Argentinosaurus. Puertasaurus délka 35-40 m Tento obří dinosaurus žil mnohem později než většina dalších velkých sauropodů – asi před 70 miliony lety, nedlouho před koncem křídového období, kdy všichni neptačí dinosauři vyhynuli.</p>
+                <h3>které zvíře má nejsilnější skus</h3>
+                <p>Ze všech v současnosti žijících zvířat zjistili vědci největší absolutní stisk čelistí u krokodýla mořského (Crocodylus porosus). Samec tohoto druhu může dorůst délky 6 metrů a vážit jednu tunu.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="s04">
+        <h2>4.</h2>
+        <p class="task-description">
+            Pomocí DOM Vybere druhý <p> element (index 1) a změňte písmo na zelené
+        </p>
+        <div class="task">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatibus aspernatur libero repellat, tempora explicabo exercitationem nam ducimus molestias cupiditate?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, fugit harum ullam, sequi culpa facere nesciunt ipsum placeat magni quia perspiciatis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ut error pariatur unde rem quas nulla, numquam quam sequi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, numquam quo cum nemo, ipsum reiciendis illum accusantium tenetur porro debitis quasi velit, dolor unde!</p>
+        </div>
+    </section>
+
+    <hr>
+    
+</body>
+</html>
