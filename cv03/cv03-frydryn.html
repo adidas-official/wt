@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV03 - Frydryn - wt</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="s01">
+        <h2>1.</h2>
+        <p class="task-description">Vytvořte jednoduchou HTML stránku s tabulkou. Tuto stránku vložte na konec stávající HTML stránky použijte Ajax, klepnutím na tlačítko Inspirací může být přednáška (3)</p>
+        <hr>
+
+        <div class="task">
+            <button id="getData" onclick="getData()">Zobrazit</button>
+
+            <table id="tableOfData">
+                <thead>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Popis</th>
+                        <th>Cena</th>
+                    </tr>
+                </thead>
+                <tbody id="rowsOfData">
+                    <!-- insert data here from json on "server" -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="s02">
+        <h2>2.</h2>
+        <p class="task-description">Vytvořte textový soubor. Do něj vložte 1 vetu, kde bude vaše jméno a příjmení. Věta se pomocí ajaxu zobrazí v HTML stránce po například klepnutí na tlačítko. </p>
+        <hr>
+
+        <div class="task">
+
+            <button id="getNamae" onclick="getName()">Jak se jmenuju?</button>
+            <span id="name"></span>
+
+        </div>
+    </section>
+    <section id="s03">
+        <h2>3.</h2>
+        <p class="task-description">Vytvořte pomocí php jednoduchý kalkulátor, který po zaslání 2 čísel a operátoru (+,-,*, /) bude  provádět danou operaci. Pak vytvořte html stránku s formulářem pro zadání 2 čísel a operátoru. Výsledek se bude získávat ze souboru php pomocí Ajaxu.</p>
+        <hr>
+
+        <div class="task">
+
+            <input type="number" id="num1" tabindex="1"><br>
+            <button tabindex="3" data-operation="%2B">+</button>
+            <button tabindex="4" data-operation="-">-</button>
+            <button tabindex="5" data-operation="*">*</button>
+            <button tabindex="6" data-operation="/">/</button>
+            <br>
+            <input type="number" id="num2" tabindex="2"><br>
+            <span id="answer"></span>
+
+        </div>
+    </section>
+    
+</body>
+<script src="main.js"></script>
+</html>

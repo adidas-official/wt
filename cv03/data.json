@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Intel Core i5",
+        "description": "Velmi  výkonný procesor",
+        "price": 5000
+    },
+    {
+        "name": "AMD A8-7650K",
+        "description": "Výkonný 4-jádrový AMD procesor",
+        "price": 2600
+    },
+    {
+        "name": "Samsung SSD 850 EVO 250GB",
+        "description": "Výkonný značkový SSD disk s dostačující kapacitou",
+        "price": 3000
+    },
+    {
+        "name": "Kingston 2x8GB DDR 2133",
+        "description": "Výkonná dvojce operačních pamětí pro stolní PC",
+        "price": 1900
+    }
+]
