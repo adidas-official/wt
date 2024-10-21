@@ -2,7 +2,7 @@
 
 class Product {
     private $conn;
-    private $table_name = 'products';
+    private $table_name = 'wt_06_products';
 
     public $id;
     public $name;
@@ -33,7 +33,7 @@ class Product {
     }
 
     public function update() {
-        $query = 'UPDATE `products` SET `name`=:name, `description`=:description, `price`=:price WHERE `id`=:id';
+        $query = 'UPDATE ' . $this->table_name . ' SET `name`=:name, `description`=:description, `price`=:price WHERE `id`=:id';
         $stmt = $this->conn->prepare($query);
 
         // validate date if it does not contain any malicious code
