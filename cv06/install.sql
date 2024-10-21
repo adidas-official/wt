@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `wt_06_products` (
     `description` text COMMENT 'Product Description',
     `price` decimal(10, 2) NOT NULL COMMENT 'Product Price',
     PRIMARY KEY (`id`)
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_c;
+);
 
 INSERT INTO `wt_06_products` (`name`, `description`, `price`) VALUES ('HTML & CSS Book', 'A comprehensive guide to HTML and CSS', 2999.00);
 INSERT INTO `wt_06_products` (`name`, `description`, `price`) VALUES ('JavaScript Book', 'Learn JavaScript from scratch', 3999.00);
