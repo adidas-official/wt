@@ -70,13 +70,13 @@ class Product {
 
     public function create() {
 
-        $query = 'INSERT INTO' . $this->table_name . '(`name`, `description`, `price`) VALUES (:name, :description, :price)'; 
+        $query = 'INSERT INTO ' . $this->table_name . ' (`name`, `description`, `price`) VALUES (:name, :description, :price)'; 
         $stmt = $this->conn->prepare($query);
 
         // validate date if it does not contain any malicious code
         $this->name = filter_var($this->name, FILTER_UNSAFE_RAW);
         $this->description = filter_var($this->description, FILTER_UNSAFE_RAW);
-        $this->price = filter_var($this->price, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+        $this->price = filter_var($this->price, FILTER_UNSAFE_RAW);
 
         // bind the parameters
         $stmt->bindParam(":name", $this->name);
