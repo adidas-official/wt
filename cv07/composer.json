@@ -1,0 +1,6 @@
+{
+    "require": {
+        "symfony/webapp-meta": "^1.0",
+        "peej/tonic": "^3.3"
+    }
+}

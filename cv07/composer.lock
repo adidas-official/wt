@@ -1,0 +1,119 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "8090f7f49b80b1180dc3ab6cbe0518c0",
+    "packages": [
+        {
+            "name": "peej/tonic",
+            "version": "v3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peej/tonic.git",
+                "reference": "dde1effe8d24320696f24508b2e622c74493cba5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/peej/tonic/zipball/dde1effe8d24320696f24508b2e622c74493cba5",
+                "reference": "dde1effe8d24320696f24508b2e622c74493cba5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "behat/behat": "2.*",
+                "henrikbjorn/phpspec-code-coverage": "1.*@dev",
+                "peej/phpdoctor": "dev-master",
+                "phpspec/phpspec": "2.0.*@dev"
+            },
+            "suggest": {
+                "pimple/pimple": "A simple dependancy injection container to handle your services",
+                "smarty/smarty": "PHP templating engine for building response representations"
+            },
+            "bin": [
+                "web/dispatch.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tonic": "src/",
+                    "Tyrell": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul James",
+                    "email": "paul@peej.co.uk"
+                }
+            ],
+            "description": "The RESTful Web App PHP Micro-Framework",
+            "homepage": "http://peej.github.com/tonic",
+            "keywords": [
+                "microframework",
+                "rest"
+            ],
+            "support": {
+                "issues": "https://github.com/peej/tonic/issues",
+                "source": "https://github.com/peej/tonic/tree/master"
+            },
+            "time": "2015-02-18T19:42:32+00:00"
+        },
+        {
+            "name": "symfony/webapp-meta",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/webapp-meta.git",
+                "reference": "df062f539ed5203b8ba1e5cdd9b1745afa983d69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/webapp-meta/zipball/df062f539ed5203b8ba1e5cdd9b1745afa983d69",
+                "reference": "df062f539ed5203b8ba1e5cdd9b1745afa983d69",
+                "shasum": ""
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A meta package for the web app pack",
+            "support": {
+                "issues": "https://github.com/symfony/webapp-meta/issues",
+                "source": "https://github.com/symfony/webapp-meta/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "abandoned": true,
+            "time": "2021-10-20T16:02:05+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

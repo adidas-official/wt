@@ -1,0 +1,15 @@
+31b276,127.0.0.1,GET,http://127.0.0.1:8001/hello,1731863030,31f1f2,404,request
+31f1f2,127.0.0.1,GET,http://127.0.0.1:8001/hello,1731863030,,404,request
+9f347e,127.0.0.1,GET,http://127.0.0.1:8001/,1731863032,,404,request
+6e41c4,127.0.0.1,GET,http://127.0.0.1:8001/home,1731863035,,200,request
+865e91,127.0.0.1,GET,http://127.0.0.1:8001/favicon.ico,1731863036,89dab1,404,request
+89dab1,127.0.0.1,GET,http://127.0.0.1:8001/favicon.ico,1731863036,,404,request
+3c5b7a,127.0.0.1,GET,http://127.0.0.1:8001/,1731863067,,404,request
+214302,127.0.0.1,GET,http://127.0.0.1:8001/homepage,1731863088,,200,request
+d7e1dc,127.0.0.1,GET,http://127.0.0.1:8001/about,1731863091,,200,request
+5255de,127.0.0.1,GET,http://127.0.0.1:8001/contact,1731863092,,200,request
+0b0db9,127.0.0.1,GET,http://127.0.0.1:8001/path/to/your/css/styles.css,1731863092,200fc5,404,request
+200fc5,127.0.0.1,GET,http://127.0.0.1:8001/path/to/your/css/styles.css,1731863092,,404,request
+f163f6,127.0.0.1,GET,http://127.0.0.1:8001/getter?name=test&toLower=ABCD,1731863094,,200,request
+7ae3c9,127.0.0.1,GET,http://127.0.0.1:8001/homepage,1731863095,,200,request
+2bda5f,127.0.0.1,GET,http://127.0.0.1:8001/homepage,1731863615,,200,request

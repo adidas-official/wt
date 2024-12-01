@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Getter{% endblock %}
+
+{% block body %}
+    <h1>Getter</h1>
+    <p>Ahoj, {{ name }}</p>
+    <p>Text malymi pismeny zde <span style="font-weight: bold">{{ toLower|lower }}</span> </p>
+    <p>Dump</p>
+    <pre>{{ dump(dump) }}</pre>
+{% endblock %}
