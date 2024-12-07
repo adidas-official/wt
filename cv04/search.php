@@ -5,7 +5,7 @@ $name = filter_input(INPUT_GET, "term", FILTER_UNSAFE_RAW);
 
 try {
 
-    $query = "SELECT `name` FROM `names` WHERE `name` LIKE :term";
+    $query = "SELECT `name` FROM `wt_04_names` WHERE `name` LIKE :term";
     $n = "%$name%";
     $stmt = $conn->prepare($query);
     $stmt->bindParam(":term", $n, PDO::PARAM_STR);
