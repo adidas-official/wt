@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sklad{% endblock %}
+
+{% block body %}
+    <h1>Sklad</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ sklad.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ sklad.title }}</td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
+                <td>{{ sklad.quantity }}</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>{{ sklad.price }}</td>
+            </tr>
+            <tr>
+                <th>Created_at</th>
+                <td>{{ sklad.createdAt ? sklad.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Updated_at</th>
+                <td>{{ sklad.updatedAt ? sklad.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_sklad_index') }}">back to list</a>
+
+    <a href="{{ path('app_sklad_edit', {'id': sklad.id}) }}">edit</a>
+
+    {{ include('sklad/_delete_form.html.twig') }}
+{% endblock %}
