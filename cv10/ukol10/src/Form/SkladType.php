@@ -15,12 +15,6 @@ class SkladType extends AbstractType
             ->add('title')
             ->add('quantity')
             ->add('price')
-            ->add('created_at', null, [
-                'widget' => 'single_text',
-            ])
-            ->add('updated_at', null, [
-                'widget' => 'single_text',
-            ])
         ;
     }
 
