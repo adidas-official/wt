@@ -1,0 +1,16 @@
+# translations/messages.en.yaml
+labels:
+  title: 'Product Title'
+  quantity: 'Quantity'
+  price: 'Price'
+  created_at: 'Created At'
+  updated_at: 'Updated At'
+  category: 'Category'
+  actions: 'Actions'
+  show: 'Show'
+  edit: 'Edit'
+  create_new: 'Create New'
+  back_to_idx: 'Back to list'
+  delete: 'Delete'
+  update: 'Update'
+  confirm_delete: 'Are you sure you want to delete this product?'
