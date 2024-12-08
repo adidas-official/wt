@@ -31,6 +31,9 @@ class Sklad
     #[ORM\Column(type: 'datetime', nullable: true)]
     private $updated_at;
 
+    #[ORM\Column(length: 255, nullable: true, options: ['default' => 'Uncategorized'])]
+    private ?string $Category = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -92,6 +95,18 @@ class Sklad
     public function setUpdatedAt(?\DateTimeInterface $updated_at): static
     {
         $this->updated_at = $updated_at;
+
+        return $this;
+    }
+
+    public function getCategory(): ?string
+    {
+        return $this->Category;
+    }
+
+    public function setCategory(?string $Category): static
+    {
+        $this->Category = $Category;
 
         return $this;
     }
