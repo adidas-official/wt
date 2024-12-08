@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\SkladRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 #[ORM\Entity(repositoryClass: SkladRepository::class)]
 class Sklad
@@ -21,6 +22,14 @@ class Sklad
 
     #[ORM\Column(options: ['default' => 0.00])]
     private ?float $price = 0.00;
+
+    #[Gedmo\Timestampable(on: 'update')]
+    #[ORM\Column(type: 'datetime', nullable: true)]
+    private $created_at;
+
+    #[Gedmo\Timestampable(on: 'update')]
+    #[ORM\Column(type: 'datetime', nullable: true)]
+    private $updated_at;
 
     public function getId(): ?int
     {
@@ -62,4 +71,30 @@ class Sklad
 
         return $this;
     }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->created_at;
+    }
+
+    public function setCreatedAt(?\DateTimeInterface $created_at): static
+    {
+        $this->created_at = $created_at;
+
+        return $this;
+    }
+
+    public function getUpdatedAt(): ?\DateTimeInterface
+    {
+        return $this->updated_at;
+    }
+
+    public function setUpdatedAt(?\DateTimeInterface $updated_at): static
+    {
+        $this->updated_at = $updated_at;
+
+        return $this;
+    }
+
+
 }
