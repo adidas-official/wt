@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posli pole v poli{% endblock %}
+
+{% block body %}
+
+<div>
+    <h1>Posli pole!</h1>
+    <ul>
+    {% for p in pole %}
+        <li>
+            {{p}}
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

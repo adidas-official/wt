@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posli pole v poli{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Posli pole v poli!</h1>
+    <ul>
+    {% for person in lide %}
+        <li class="{{ loop.index is odd ? 'licha' : 'suda' }}">
+            Jmeno: {{ person.jmeno }}, Prijmeni: {{ person.prijmeni }}, Vek: {{ person.vek }}
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}
