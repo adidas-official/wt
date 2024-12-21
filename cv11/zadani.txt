@@ -1,0 +1,11 @@
+1. Vytvořte 1 tabulku a k ní vygenerovat CRUD. 
+
+Nastavte uživatelská práva na jednu routu (bude se jmenovat jako vas login) v aplikaci symfony, kde po zadání jména a hesla user s heslem user se vypíše obsah libovolné tabulky tabulky. 
+
+Po přihlášení jako admin a heslem admin budete vidět a moci data přidávat, opravovat a mazat 
+
+Hesla uživatelů budou šifrována
+
+Inspirace: V přednášce bezpečnost v této lekci
+
+Výsledek cvičení doložte zobrazením screeny v prohlížeči na serveru 195.113.207.163. 
