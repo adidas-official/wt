@@ -19,7 +19,7 @@ security:
             form_login:
                 login_path: app_login
                 check_path: app_login
-                default_target_path: app_home
+                default_target_path: app_incidenty_index
             logout:
                 path: app_logout
                 target: app_login
@@ -36,6 +36,7 @@ security:
         - { path: ^/home, roles: ROLE_USER }
         - { path: ^/login, roles: PUBLIC_ACCESS }
         - { path: ^/register, roles: PUBLIC_ACCESS }
+        - { path: ^/incidenty, roles: ROLE_USER }
 
 when@test:
     security:
