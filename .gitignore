@@ -1,2 +1,3 @@
-.env
+cv04/.env
 *.lock
+**/var/
